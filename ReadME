@@ -1,0 +1,39 @@
+# JavaScript Quiz
+
+This is a simple JavaScript quiz application where users can test their knowledge of JavaScript concepts. The quiz presents a series of questions with multiple-choice answers and tracks the user's score. 
+
+## Features
+
+- Multiple-choice questions
+- Timer to track time spent on the quiz
+- Ability to submit scores with initials
+- View top scores
+
+## Usage
+
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in your web browser.
+
+## How to Play
+
+1. Click on the "Start Quiz" button to begin.
+2. Answer each question by selecting one of the multiple-choice options.
+3. The timer will start counting down from 100 seconds.
+4. Once you have answered all the questions, or the timer runs out, the quiz will end.
+5. Enter your initials when prompted and click "Submit" to save your score.
+6. You can view top scores by clicking on the "Top scores" link.
+
+## Dependencies
+
+This project does not have any external dependencies.
+
+## Structure
+
+- `index.html`: Main HTML file containing the structure of the quiz.
+- `assets/css/styles.css`: CSS file for styling the quiz interface.
+- `assets/js/questions.js`: JavaScript file containing the quiz questions and answers.
+- `assets/js/logic.js`: JavaScript file containing the logic for the quiz functionality.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
