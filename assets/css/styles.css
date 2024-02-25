@@ -1,0 +1,129 @@
+/* Font Stack and Base Styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Links */
+a {
+  color: #6c5ce7;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #9562cf;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  margin: 5px;
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #357bd8;
+}
+
+/* Form Input */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Lists */
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternate Background for List Items */
+li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Layout and Alignment */
+.wrapper {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Visibility */
+.hide {
+  display: none;
+}
+
+/* Positioning */
+.scores, .timer {
+  position: absolute;
+  top: 20px;
+}
+
+.scores {
+  left: 20px;
+}
+
+.timer {
+  right: 20px;
+}
+
+/* Feedback */
+.feedback {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #777;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #ccc;
+}
+
+/* Animations */
+.timer-animation {
+  animation: countdown 1s infinite alternate;
+}
+
+@keyframes countdown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Incorrect Answer Animation */
+.incorrect-answer {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
